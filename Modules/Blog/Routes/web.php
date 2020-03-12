@@ -11,6 +11,4 @@
 |
 */
 
-Route::prefix('blog')->group(function() {
-    Route::get('/', 'BlogController@index');
-});
+Route::get('users/{user_id}/posts', 'UserPostController@index')->name('users.posts.index');
